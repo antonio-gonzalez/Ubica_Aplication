@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:panel header="REGISTRO DE ESTUDIANTES">
+                <f:facet name="">
+                </f:facet>
+                    <table>
+                            <tr>
+                                <td> NOMBRE </td>
+                                <td><h:outputText value="${control.Nombre}"</td>
+                            </tr>
+                            <tr>
+                                <td> APELLIDO </td>
+                                <td><h:outputText value="${control.Apellido}"</td>
+                            </tr>
+                            <tr>
+                                <td> FECHA DE NACIMIENTO </td>
+                                <td><h:outputText value="${control.fecha_nacimiento}"</td>
+                            </tr>
+                            <tr>
+                                <td> DIRECCION </td>
+                                <td><h:outputText value="${control.home}"</td>
+                            </tr>
+                    </table>
+            </p:panel>
+        </h:form>      
+    </h:body>
+</html>
+
